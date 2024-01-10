@@ -427,7 +427,6 @@ footer img{
     border: 0!important;
     clip: rect(1px,1px,1px,1px)!important;
 }
-
 @media screen and (max-width: 767px) {
     header{
         padding-inline: 30px;
@@ -527,12 +526,13 @@ footer img{
     }
     .content {
         padding-block: 20px;
-
-    }
-    .content {
+        text-align: left;
         flex-direction: column;
-      }
-    
+        
+        > h3{
+            text-align: left;
+        }
+    }
     .custom-button {
         order: 2;
     }
@@ -591,4 +591,18 @@ footer img{
     .attribution{
         padding-bottom: 6rem;
     }    
+}
+@media only screen and (max-width: 570px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        > h1{
+           text-align: left;
+        }
+    }
+    .content {
+        text-align: left;
+    }
 }
